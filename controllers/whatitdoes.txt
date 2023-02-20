@@ -1,0 +1,1 @@
+Controllers have the functions and the logic.
