@@ -1,7 +1,8 @@
 // LOCALLY 
 
 //LESSON 1  
-
+###
+GET http://localhost:8080/
 
 
 // LESSON 2 
