@@ -4,4 +4,4 @@ const displayName = (req, res) => {
 
 
   
-module.exports = { displayName}
+module.exports = { displayName }

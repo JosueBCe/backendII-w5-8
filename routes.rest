@@ -28,7 +28,7 @@ GET http://localhost:8080/contacts/63f4e8a60760c6be2eafebfe
 
 // LESSON 1
 ###
-https://backend-dev-1joz.onrender.com
+GET https://backend-dev-1joz.onrender.com
 
 
 // LESSON 2
