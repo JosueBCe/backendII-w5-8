@@ -4,7 +4,7 @@ const ObjectId = require('mongodb').ObjectId; // Requieres the ID
 
 // Function that allows to get the collection "CONTACTS"
 const getAll = async (req, res, next) => {
-  const result = await mongodb.getDb().db("team").collection('team').find();
+  const result = await mongodb.getDb().db("Collections").collection('Contacts').find();
   result.toArray().then((lists) => {
     res.setHeader('Content-Type', 'application/json');
     res.status(200).json(lists);
@@ -15,8 +15,8 @@ const getSingle = async (req, res, next) => {
   const userId = new ObjectId(req.params.id);
   const result = await mongodb
     .getDb()
-    .db()
-    .collection('team')
+    .db("Collections")
+    .collection('Contacts')
     .find({ _id: userId });
   result.toArray().then((lists) => {
     res.setHeader('Content-Type', 'application/json');

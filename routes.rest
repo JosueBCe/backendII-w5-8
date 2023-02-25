@@ -1,20 +1,50 @@
 // LOCALLY 
 
-###
-GET http://localhost:3000/contacts 
+//LESSON 1  
 
 
+
+// LESSON 2 
 ###
-GET http://localhost:3000/contacts/63f4e8a60760c6be2eafebfb
+GET http://localhost:8080/contacts 
 
 ###
-GET http://localhost:3000/contacts/63f4e8a60760c6be2eafebfc
+GET http://localhost:8080/contacts/63f4e8a60760c6be2eafebfd
 
 ###
-GET http://localhost:3000/contacts/63f4e8a60760c6be2eafebfd
+GET http://localhost:8080/contacts/63f4e8a60760c6be2eafebff
 
 ###
-GET http://localhost:3000/contacts/63f4e8a60760c6be2eafebfe
+GET http://localhost:8080/contacts/63f4e8a60760c6be2eafebfb
 
 ###
-GET http://localhost:3000/contacts/63f4e8a60760c6be2eafebff
+GET http://localhost:8080/contacts/63f4e8a60760c6be2eafebfc
+
+###
+GET http://localhost:8080/contacts/63f4e8a60760c6be2eafebfe
+
+// RENDER 
+
+// LESSON 1
+###
+https://backend-dev-1joz.onrender.com
+
+
+// LESSON 2
+###
+GET https://backend-dev-1joz.onrender.com/contacts
+
+###
+GET https://backend-dev-1joz.onrender.com/contacts/63f4e8a60760c6be2eafebfd
+
+###
+GET https://backend-dev-1joz.onrender.com/contacts/63f4e8a60760c6be2eafebff
+
+###
+GET https://backend-dev-1joz.onrender.com/contacts/63f4e8a60760c6be2eafebfb
+
+###
+GET https://backend-dev-1joz.onrender.com/contacts/63f4e8a60760c6be2eafebfc
+
+###
+GET https://backend-dev-1joz.onrender.com/contacts/63f4e8a60760c6be2eafebfe
