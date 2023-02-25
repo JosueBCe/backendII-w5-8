@@ -1,5 +1,5 @@
 const displayName = (req, res) => {
-    res.send('Ivan Leffalle (Brother in Law)');
+    res.send('Ivan Leffalle');
 }
 
 
