@@ -1,0 +1,20 @@
+// LOCALLY 
+
+###
+GET http://localhost:3000/contacts 
+
+
+###
+GET http://localhost:3000/contacts/63f4e8a60760c6be2eafebfb
+
+###
+GET http://localhost:3000/contacts/63f4e8a60760c6be2eafebfc
+
+###
+GET http://localhost:3000/contacts/63f4e8a60760c6be2eafebfd
+
+###
+GET http://localhost:3000/contacts/63f4e8a60760c6be2eafebfe
+
+###
+GET http://localhost:3000/contacts/63f4e8a60760c6be2eafebff

@@ -1,8 +1,11 @@
 const routes = require('express').Router();
 
-const myController = require("../controllers")
+// Route to display Name
+routes.use('/', require("./displayName") );
 
-routes.get('/', myController.displayName );
+// Route to display the contacts from DB
+routes.use('/contacts', require("./contacts") );
+
 
 
 module.exports = routes;

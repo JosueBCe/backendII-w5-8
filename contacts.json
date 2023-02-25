@@ -1,0 +1,39 @@
+
+
+[    {
+      "firstName": "Layne",
+      "lastName": "Lawson",
+      "email": "johndoe@gmail.com",
+      "favoriteColor": "blue",
+      "birthday": "1990-05-15"
+    },
+    {
+      "firstName": "Jane",
+      "lastName": "Smith",
+      "email": "janesmith@gmail.com",
+      "favoriteColor": "green",
+      "birthday": "1985-12-01"
+    },
+    {
+      "firstName": "Dan",
+      "lastName": "Johnson",
+      "email": "bjohnson@gmail.com",
+      "favoriteColor": "red",
+      "birthday": "1978-07-22"
+    },
+    {
+      "firstName": "Alice",
+      "lastName": "Sanchez",
+      "email": "alee@gmail.com",
+      "favoriteColor": "purple",
+      "birthday": "1995-02-10"
+    },
+    {
+      "firstName": "Mike",
+      "lastName": "Bankman",
+      "email": "mdavis@gmail.com",
+      "favoriteColor": "yellow",
+      "birthday": "1983-11-05"
+    }
+  ]
+  
