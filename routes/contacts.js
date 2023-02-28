@@ -11,4 +11,13 @@ router.get('/', contactsController.getAll);
 // Call getSingle function to get single contact when searched by id
 router.get('/:id', contactsController.getSingle);
 
+// Creating new Contact
+router.post('/', contactsController.addNewContact)
+
+// Updating the a contact info.
+router.put('/:id', contactsController.updateContact);
+
+// Deleting One contact
+router.delete('/:id', contactsController.deleteContact);
+
 module.exports = router;

@@ -24,4 +24,68 @@ const getSingle = async (req, res, next) => {
   });
 };
 
-module.exports = { getAll, getSingle };
+// With the request, structure the request and insert a new contact. 
+const addNewContact = async (req, res) => {
+  const contact = {
+    firstName: req.body.firstName,
+    lastName: req.body.lastName,
+    email: req.body.email,
+    favoriteColor: req.body.favoriteColor,
+    birthDate: req.body.birthDate,
+  };
+  // Inserting in DB New Contact
+  const response = await mongodb
+    .getDb()
+    .db("Collections")
+    .collection('Contacts')
+    .insertOne(contact);
+
+  if (response.acknowledged) {
+    res.status(201).json(response);
+  } else {
+    res.status(500).json(response.error || "Some error occurred while creating the contact");
+  }
+}
+
+const updateContact = async (req, res) => {
+  const userId = new ObjectId(req.params.id); // Get the id specified in the url parameter
+  const contact = {
+    firstName: req.body.firstName,
+    lastName: req.body.lastName,
+    email: req.body.email,
+    favoriteColor: req.body.favoriteColor,
+    birthDate: req.body.birthDate
+  };
+  const response = await mongodb
+    .getDb()
+    .db("Collections")
+    .collection('Contacts')
+    .replaceOne({ _id: userId }, contact);
+  console.log(response);
+  if (response.modifiedCount > 0) {
+    res.status(204).send();
+  } else {
+    res.status(500).json(response.error || 'Some error occurred while updating the contact.');
+  }
+};
+
+const deleteContact = async (req, res) => {
+  const userId = new ObjectId(req.params.id);
+  const response = await 
+  mongodb.getDb()
+  .db("Collections")
+  .collection('Contacts')
+  .deleteOne({ _id: userId });
+
+  console.log(response);
+  if (response.deletedCount > 0) {
+    res.status(204).send();
+  } else {
+    res.status(500).json(response.error || 'Some error occurred while deleting the contact.');
+  }
+};
+
+
+
+
+module.exports = { getAll, getSingle, addNewContact, updateContact, deleteContact };
