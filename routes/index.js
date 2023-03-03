@@ -1,14 +1,7 @@
-const routes = require('express').Router();
-const router = require('express').Router();
-
-
-// Route to display Name
-// routes.use('/', require("./displayName") );
+const express = require('express');
+const router = express.Router();
 
 router.use('/', require('./swagger'));
+router.use('/contacts', require('./contacts'));
 
-// Route to display the contacts from DB
-routes.use('/contacts', require("./contacts") );
-
-
-module.exports = routes;
+module.exports = router;
